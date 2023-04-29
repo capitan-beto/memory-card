@@ -4,6 +4,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
 }
 
+.footer {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 0;
+  gap: .5rem;
+  background: rgba(87, 111, 114, .5);
+  min-width: 100vw;
+}
