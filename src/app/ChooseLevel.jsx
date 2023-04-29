@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./page.module.css"
 
 const links = [{
     label: "Easy",
@@ -25,25 +26,25 @@ export default function ChooseLevel() {
 
 
     return(
-        <header>
+        <div className={styles.chooseLevel}>
             <nav>
                 <ul>
                     {links.map(({ label, route, name, src, alt }) => {
                         return <li key={route}>
                             <Link href={route}>
                                 {label}
-                                {name}
                                 <Image
                                   src={src}
                                   alt={alt}
                                   width={64}
                                   height={64}
-                                />
+                                  />
+                                  {name}
                             </Link>
                         </li>
                     })}
                 </ul>
             </nav>
-        </header>
+        </div>
     )
 }
