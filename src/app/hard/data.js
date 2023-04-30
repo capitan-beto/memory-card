@@ -1,0 +1,50 @@
+export const players = [{
+    name: "Arregui",
+    alt: "Arregui", 
+    src: ""
+}, {
+    name: "Gómez",
+    alt: "Gómez",
+    src: ""
+}, {
+    name: "Garré",
+    alt: "Garré",
+    src: ""
+}, {
+    name: "Cúper",
+    alt: "Cúper",
+    src: ""
+}, {
+    name: "Rochia",
+    alt: "Rochia",
+    src: ""
+}, {
+    name: "Basigalup",
+    alt: "Basigalup",
+    src: ""
+}, {
+    name: "Saccardi",
+    alt: "Saccardi",
+    src: ""
+}, {
+    name: "Júarez",
+    alt: "Júarez",
+    src: ""
+}, {
+    name: "Cañete",
+    alt: "Cañete",
+    src: ""
+}, {
+    name: "Márcico",
+    alt: "Márcico",
+    src: ""
+}, {
+    name: "Crocco",
+    alt: "Crocco",
+    src: ""
+}, {
+    name: "Griguol",
+    alt: "Griguol",
+    src: ""
+}
+]
