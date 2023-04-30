@@ -1,15 +1,23 @@
-import styles from "../page.module.css";
-import {players} from "./data";
+import styles from "./page.module.css";
+import Image from "next/image";
+import { players } from "./data";
 
 export default function Easy() {
 
     return (
         <main className={styles.main}>
             <nav>
-                <ul>
-                    {players.map(({ name, alt }) => {
-                        return <li key={name}>
-                            {name};
+                <ul className={styles.container}>
+                    {players.map(({ name, alt, src }) => {
+                        return <li key={name} className={styles.imageContainer}>
+                            <Image
+                            className={styles.image}
+                              alt={alt}
+                              src={src}
+                              width={120}
+                              height={150}
+                            />
+                            {name}
                         </li>
                     })}
                 </ul>

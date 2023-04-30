@@ -1,0 +1,29 @@
+.main {
+    backdrop-filter: blur(7px);
+    display: -ms-inline-grid;
+    place-content: center;
+    padding-top: 10vh;
+    min-height: calc(100vh - 2rem);
+}
+
+.container{
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background: blue;
+    border: solid 1px #000;
+    border-collapse: collapse;
+}
+
+.image {
+    width: 130px;
+    height: 170px;
+}
