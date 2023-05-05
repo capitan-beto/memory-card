@@ -43,8 +43,10 @@ export default function ChooseLevel() {
     return(
         <div className={styles.chooseLevel}>
             <nav>
-                <h1>{team}</h1>
-                <h2>Dificultad: {level}</h2>
+                <div  className={styles.levelText}>
+                    <h1>{team}</h1>
+                    <h2>Dificultad: {level}</h2>
+                </div>
                 <ul>
                     {links.map(({ label, route, name, src, alt }) => {
                         return <li key={route}
