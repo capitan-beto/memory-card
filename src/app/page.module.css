@@ -34,8 +34,11 @@
 
 .chooseLevel > nav > ul > li {
   padding: 1rem;
-  border: solid 1px black;
-  background: #fff;
-  width: 40%;
+  /* border: solid 1px black; */
+  background: rgb(255,255,255, .4);
   aspect-ratio: 1 / 1;
+}
+
+.chooseLevel > nav > ul > li:hover {
+  background: rgb(255, 255, 255, .7);
 }
