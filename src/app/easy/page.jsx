@@ -6,22 +6,40 @@ import { players} from "./data";
 import { sort } from "../gameLogic";
 import { useState } from "react";
 
+function check(name, visited) {
+    if (visited.length === 0) return false;
+    return visited.includes(name) ? true : false;
+}
+
 export default function Easy() {
     const [items, setItems] = useState(players);
+    const [score, setScore] = useState(0);
+    const [visited, setVisited] = useState([]);
 
-    const handleItems = () => {
+    const handleItems = (name) => {
+        if (check(name, visited)) {
+            setScore(0);
+            setVisited([]);
+        } else {
+            setVisited([...visited, name]);
+            setScore(prev => prev + 1);
+        }
         setItems([...sort(items)]);
     }
 
     return (
         <main className={styles.main}>
+            <div>
+                <h3>Back</h3>
+                <h3>Score: {score}</h3>
+            </div>
             <nav>
                 <ul className={styles.container}>
                     {items.map(({ name, alt, src }) => {
                         return <li 
                           key={name}  
                           className={styles.imageContainer} 
-                          onClick={() => handleItems()}
+                          onClick={() => handleItems(name)}
                         >
                             <Image
                               className={styles.image}
