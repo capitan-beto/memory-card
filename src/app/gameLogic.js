@@ -6,3 +6,8 @@ export function sort(arr) {
     }
     return arr;
 }
+
+export function check(name, visited) {
+    if (visited.length === 0) return false;
+    return visited.includes(name) ? true : false;
+}
