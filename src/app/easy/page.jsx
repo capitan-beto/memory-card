@@ -3,13 +3,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import { players} from "./data";
-import { sort } from "../gameLogic";
+import { sort, check } from "../gameLogic";
 import { useState } from "react";
-
-function check(name, visited) {
-    if (visited.length === 0) return false;
-    return visited.includes(name) ? true : false;
-}
 
 export default function Easy() {
     const [items, setItems] = useState(players);
