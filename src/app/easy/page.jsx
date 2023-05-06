@@ -18,9 +18,12 @@ export default function Easy() {
             <nav>
                 <ul className={styles.container}>
                     {items.map(({ name, alt, src }) => {
-                        return <li key={name} className={styles.imageContainer}>
+                        return <li 
+                          key={name}  
+                          className={styles.imageContainer} 
+                          onClick={() => handleItems()}
+                        >
                             <Image
-                              onClick={() => handleItems()}
                               className={styles.image}
                               alt={alt}
                               src={src}
