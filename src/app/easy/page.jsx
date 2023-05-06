@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import Image from "next/image";
-import { players} from "./data";
+import { players } from "./data";
 import { sort, check } from "../gameLogic";
 import { useState } from "react";
 
@@ -22,11 +22,18 @@ export default function Easy() {
         setItems([...sort(items)]);
     }
 
+    const Score = () => {
+        if (score  === 3) return <h3>Congrats you won!
+             Try other level or click a player to play again...
+            </h3>;
+        return <h3>Score: {score}</h3>
+    }
+
     return (
         <main className={styles.main}>
             <div>
                 <h3>Back</h3>
-                <h3>Score: {score}</h3>
+                <Score/>
             </div>
             <nav>
                 <ul className={styles.container}>
