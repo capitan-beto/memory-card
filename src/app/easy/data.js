@@ -46,5 +46,5 @@ export const players = [{
     name: "Valdano",
     alt: "Valdano",
     src: "/arg/valdano.webp"
-}
-]
+}]
+
