@@ -1,10 +1,10 @@
 export const players = [{
-    name: " Maradona",
-    alt: "  Maradona",
+    name: "Maradona",
+    alt: "Maradona",
     src: "/arg/diegote.jpg"
 }, {
-    name: " Bilardo",
-    alt: "  Bilardo",
+    name: "Bilardo",
+    alt: "Bilardo",
     src: "/arg/bilardo.jpg"
 }, {
     name: "Pumpido",
