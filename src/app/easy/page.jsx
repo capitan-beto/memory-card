@@ -23,7 +23,7 @@ export default function Easy() {
     }
 
     const Score = () => {
-        if (score  === 3) return <h3>Congrats you won!
+        if (score  === 12) return <h3>Congrats you won!
              Try other level or click a player to play again...
             </h3>;
         return <h3>Score: {score}</h3>
