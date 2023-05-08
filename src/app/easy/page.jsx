@@ -5,7 +5,7 @@ import Image from "next/image";
 import { players } from "./data";
 import { sort, check } from "../gameLogic";
 import { useState } from "react";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Easy() {
     const [items, setItems] = useState(players);
