@@ -5,6 +5,7 @@ import Image from "next/image";
 import { players } from "./data";
 import { sort, check } from "../gameLogic";
 import { useState } from "react";
+import Link from "next/link"
 
 export default function Easy() {
     const [items, setItems] = useState(players);
@@ -32,7 +33,7 @@ export default function Easy() {
     return (
         <main className={styles.main}>
             <div>
-                <h3>Back</h3>
+                <Link href="/"><h3>Menu</h3></Link>
                 <Score/>
             </div>
             <nav>
