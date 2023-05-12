@@ -21,6 +21,7 @@
     background: blue;
     border: solid 1px #000;
     border-collapse: collapse;
+    cursor: pointer;
 }
 
 .image {
