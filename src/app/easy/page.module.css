@@ -28,6 +28,10 @@
     font-size: 1.2rem;
 }
 
+.imageContainer:hover {
+    background: rgb(255,255,255, .8);
+}
+
 .image {
     border-radius: 10px;
     width: 150px;
