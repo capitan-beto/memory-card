@@ -9,11 +9,11 @@ export const players = [{
 }, {
     name: "Schiavi",
     alt: "Schiavi",
-    src: "/boca/schiavi.jpg"
+    src: "/boca/schiavi.png"
 }, {
     name: "Burdisso",
     alt: "Burdisso",
-    src: "/boca/burdisso.jpg"
+    src: "/boca/burdisso.png"
 }, {
     name: "Rodríguez",
     alt: "Rodríguez",
@@ -25,11 +25,11 @@ export const players = [{
 }, {
     name: "Cascini",
     alt: "Cascini",
-    src: "/boca/cascini.jpg"
+    src: "/boca/cascini.png"
 }, {
     name: "Battaglia",
     alt: "Battaglia",
-    src: "/boca/battaglia.jpg"
+    src: "/boca/battaglia.png"
 }, {
     name: "Donnet",
     alt: "Donnet",
@@ -37,11 +37,11 @@ export const players = [{
 }, {
     name: "Barros Schelotto",
     alt: "Barros Schelotto",
-    src: "/boca/schelotto.jpeg"
+    src: "/boca/schelotto.png"
 }, {
     name: "Larley",
     alt: "Larley",
-    src: "/boca/larley.avif"
+    src: "/boca/larley.png"
 }, {
     name: "Bianchi",
     alt: "Bianchi",
