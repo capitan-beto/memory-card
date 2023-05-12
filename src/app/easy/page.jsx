@@ -33,7 +33,7 @@ export default function Easy() {
     return (
         <main className={styles.main}>
             <div className={styles.header}>
-                <Link href="/"><h3>Menu</h3></Link>
+                <Link className={styles.linkMenu} href="/"><h3>Menu</h3></Link>
                 <Score/>
             </div>
             <nav>
