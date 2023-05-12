@@ -1,50 +1,50 @@
 export const players = [{
     name: "Arregui",
     alt: "Arregui", 
-    src: ""
+    src: "/ferro/arregui.png"
 }, {
     name: "Gómez",
     alt: "Gómez",
-    src: ""
+    src: "/ferro/gomez.png"
 }, {
     name: "Garré",
     alt: "Garré",
-    src: ""
+    src: "/ferro/garre.png"
 }, {
     name: "Cúper",
     alt: "Cúper",
-    src: ""
+    src: "/ferro/cuper.png"
 }, {
-    name: "Rochia",
-    alt: "Rochia",
-    src: ""
+    name: "Rocchia",
+    alt: "Rocchia",
+    src: "/ferro/rocchia.png"
 }, {
     name: "Basigalup",
     alt: "Basigalup",
-    src: ""
+    src: "/ferro/basigalup.png"
 }, {
     name: "Saccardi",
     alt: "Saccardi",
-    src: ""
+    src: "/ferro/saccardi.png"
 }, {
     name: "Júarez",
     alt: "Júarez",
-    src: ""
+    src: "/ferro/juarez.png"
 }, {
     name: "Cañete",
     alt: "Cañete",
-    src: ""
+    src: "/ferro/cañete.png"
 }, {
     name: "Márcico",
     alt: "Márcico",
-    src: ""
+    src: "/ferro/marcico.png"
 }, {
     name: "Crocco",
     alt: "Crocco",
-    src: ""
+    src: "/ferro/crocco.png"
 }, {
     name: "Griguol",
     alt: "Griguol",
-    src: ""
+    src: "/ferro/griguol.png"
 }
 ]
