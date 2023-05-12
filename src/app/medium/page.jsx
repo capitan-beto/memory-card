@@ -32,7 +32,7 @@ export default function Medium() {
 
     return (
         <main className={styles.main}>
-            <div>
+            <div className={styles.header}>
                 <Link href="/"><h3>Menu</h3></Link>
                 <Score/>
             </div>
