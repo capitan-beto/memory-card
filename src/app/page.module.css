@@ -2,7 +2,7 @@
   backdrop-filter: blur(7px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 6rem;
   min-height: calc(100vh - 2rem);
