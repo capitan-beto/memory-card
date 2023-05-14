@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "./page.module.css";
+import styles from "../levels.module.css";
 import Image from "next/image";
 import { players } from "./data";
 import { sort, check } from "../gameLogic";

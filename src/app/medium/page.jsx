@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "../easy/page.module.css";
+import styles from "../levels.module.css";
 import Image from "next/image";
 import { players } from "./data";
 import { useState } from "react";
