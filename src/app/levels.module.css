@@ -8,7 +8,7 @@
 
 .container{
     margin: auto;
-    width: 80vw;
+    width: 100%;
     display: grid;
     justify-items: center;
     gap: 2rem;
@@ -36,6 +36,7 @@
     border-radius: 10px;
     width: 150px;
     height: 170px;
+    aspect-ratio: 16 / 9;
     margin-bottom: .2rem;
 }
 
@@ -51,57 +52,64 @@
     color: white;
 }
 
-@media (max-width: 360px) {
-    .main {
-        backdrop-filter: blur(7px);
-        display: -ms-inline-grid;
-        place-content: center;
-        padding-bottom: 1rem;
-        min-height: calc(100vh - 2rem);
-    }
-    
+@media (max-width: 768px) {
     .container{
-        margin: auto;
-        width: 80vw;
-        display: grid;
-        justify-items: center;
-        gap: 2rem;
+        gap: .5rem;
         grid-template-columns: repeat(4, 1fr);
     }
     
     .imageContainer {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        width: min-content;
         padding-bottom: .5rem;
+        margin-bottom: 1rem;
         background: rgb(255,255,255, .4);
-        border-radius: 10px;
-        border-collapse: collapse;
-        cursor: pointer;
-        font-size: 1.2rem;
+        font-size: .8rem;
     }
-    
-    .imageContainer:hover {
-        background: rgb(255,255,255, .8);
-    }
-    
+
     .image {
-        border-radius: 10px;
-        width: 150px;
-        height: 170px;
+        height: 150px;
+        width: 120px;
         margin-bottom: .2rem;
     }
     
     .header {
         display: grid;
         padding: 1rem;
-        gap: 1rem;
-        font-size: 1.5rem;
+        gap: 0;
+        font-size: 1.4rem;
     }
     
     .linkMenu:hover {
-        transition: all .5s ease;
-        color: white;
+        transition: none;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .container{
+        gap: .5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .imageContainer {
+        padding-bottom: .1rem;
+        background: rgb(255,255,255, .4);
+        font-size: .8rem;
+    }
+
+    .image {
+        width: 90px;
+        height: 115px;
+        margin-bottom: .3rem;
+    }
+    
+    .header {
+        display: grid;
+        padding: 1rem;
+        gap: 0;
+        font-size: 1.4rem;
+    }
+    
+    .linkMenu:hover {
+        transition: none;
     }
 }
