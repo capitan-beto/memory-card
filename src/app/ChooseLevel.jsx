@@ -55,6 +55,7 @@ export default function ChooseLevel() {
                         >
                             <Link href={route}>
                                 <Image
+                                  className={styles.img}
                                   src={src}
                                   alt={alt}
                                   width={128}

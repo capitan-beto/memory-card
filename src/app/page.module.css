@@ -8,6 +8,12 @@
   min-height: calc(100vh - 2rem);
 }
 
+.main > h1 {
+  width: 100vw;
+  text-align: center;
+  font-size: min(6vw, 48px);
+}
+
 .footer {
   height: 2rem;
   display: flex;
@@ -19,6 +25,10 @@
   min-width: 100vw;
 }
 
+.footer > p {
+  font-size: min(3vw, 32px);
+}
+
 .levelText {
   padding: 1rem;
 }
@@ -26,6 +36,8 @@
 .chooseLevel {
   display: grid;
   background: rgb(255,255,255, .4);
+  width: 100vw;
+  place-content: center;
 }
 
 .chooseLevel > nav > ul {
@@ -35,10 +47,15 @@
 
 .chooseLevel > nav > ul > li {
   transition: all .5s ease;
-  padding: 2rem;
+  padding: min(2vw, 2rem);
   aspect-ratio: 1 / 1;
 }
 
 .chooseLevel > nav > ul > li:hover {
   background: rgb(255, 255, 255, .7);
+}
+
+.img {
+  width: min(120px, 22vw);
+  aspect-ratio: 1 / 1;
 }
