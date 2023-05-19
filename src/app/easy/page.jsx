@@ -6,6 +6,8 @@ import { players } from "./data";
 import { sort, check } from "../gameLogic";
 import { useState } from "react";
 import Link from "next/link";
+import { Suspense } from "react";
+import Loading from "../components/Loading";
 
 export default function Easy() {
     const [items, setItems] = useState(players);
@@ -37,24 +39,26 @@ export default function Easy() {
                 <Score/>
             </div>
             <nav>
-                <ul className={styles.container}>
-                    {items.map(({ name, alt, src }) => {
-                        return <li 
-                          key={name}  
-                          className={styles.imageContainer} 
-                          onClick={() => handleItems(name)}
-                        >
-                            <Image
-                              className={styles.image}
-                              alt={alt}
-                              src={src}
-                              width={120}
-                              height={150}
-                            />
-                            {name}
-                        </li>
-                    })}
-                </ul>
+                <Suspense fallback={<Loading/>}>
+                    <ul className={styles.container}>
+                        {items.map(({ name, alt, src }) => {
+                            return <li
+                              key={name}
+                              className={styles.imageContainer}
+                              onClick={() => handleItems(name)}
+                            >
+                                <Image
+                                  className={styles.image}
+                                  alt={alt}
+                                  src={src}
+                                  width={120}
+                                  height={150}
+                                />
+                                {name}
+                            </li>
+                        })}
+                    </ul>
+                </Suspense>
             </nav>
         </main>
     )

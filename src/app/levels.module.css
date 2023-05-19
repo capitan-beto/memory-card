@@ -50,3 +50,58 @@
     transition: all .5s ease;
     color: white;
 }
+
+@media (max-width: 360px) {
+    .main {
+        backdrop-filter: blur(7px);
+        display: -ms-inline-grid;
+        place-content: center;
+        padding-bottom: 1rem;
+        min-height: calc(100vh - 2rem);
+    }
+    
+    .container{
+        margin: auto;
+        width: 80vw;
+        display: grid;
+        justify-items: center;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .imageContainer {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: min-content;
+        padding-bottom: .5rem;
+        background: rgb(255,255,255, .4);
+        border-radius: 10px;
+        border-collapse: collapse;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .imageContainer:hover {
+        background: rgb(255,255,255, .8);
+    }
+    
+    .image {
+        border-radius: 10px;
+        width: 150px;
+        height: 170px;
+        margin-bottom: .2rem;
+    }
+    
+    .header {
+        display: grid;
+        padding: 1rem;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .linkMenu:hover {
+        transition: all .5s ease;
+        color: white;
+    }
+}
