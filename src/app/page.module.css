@@ -33,6 +33,10 @@
   padding: 1rem;
 }
 
+.levelTextPhone > p {
+  display: none;
+}
+
 .chooseLevel {
   display: grid;
   background: rgb(255,255,255, .4);
@@ -58,4 +62,18 @@
 .img {
   width: min(120px, 22vw);
   aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 768px) {
+  .levelText{
+    display: none;
+  }
+
+  .levelTextPhone {
+    text-align: center;
+  }
+
+  .levelTextPhone > p {
+    display: grid;
+  }
 }

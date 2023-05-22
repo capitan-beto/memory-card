@@ -54,13 +54,18 @@ export default function ChooseLevel() {
                           onMouseLeave={() => handleMouseLeave()}
                         >
                             <Link href={route}>
-                                <Image
-                                  className={styles.img}
-                                  src={src}
-                                  alt={alt}
-                                  width={128}
-                                  height={128}
-                                  />
+                                <div className={styles.levelTextPhone} >
+                                    <Image
+                                      className={styles.img}
+                                      src={src}
+                                      alt={alt}
+                                      width={128}
+                                      height={128}
+                                    />
+                                    <p>{name}</p>
+                                    <p>Dificultad: {label}</p>
+                                </div>
+
                             </Link>
                         </li>
                     })}
