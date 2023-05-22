@@ -38,7 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## To-do
 
--Edit page name and favicon.
--Make available in phone.
 -compress images.
 
